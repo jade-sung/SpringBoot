@@ -30,3 +30,4 @@
 
 + Validation시, Form*.class를 따로 만들게 아니라 DTO로 하는게 좋을것 같다.
 + 빌드패턴에서 id값은 생성자에서 제외해야할듯. 지금대로면 생성전략이 있는 id필드에 빌드패턴을 이용해서 값을 넣을수 있게 되버린다.
++ JPA를 이용하려고 엔티티들에 Noarg어노테이션을 붙였다 > id null로 생성할수있게됬다 > (access = AccessLevel.PROTECTED) 추가해야한다.
